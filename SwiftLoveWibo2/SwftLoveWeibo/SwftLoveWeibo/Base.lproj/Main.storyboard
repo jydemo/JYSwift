@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1c7-Bh-yEn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwftLoveWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ws-r4-A5a">
+                                <rect key="frame" x="285" y="28" width="30" height="30"/>
+                                <state key="normal" title="验证"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Ws-r4-A5a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="VMd-Oq-LVb"/>
+                            <constraint firstItem="4Ws-r4-A5a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vi6-yL-QQ3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="singin" destination="4Ws-r4-A5a" id="TBP-2J-s0n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-706" y="-56"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Sle-AW-gap">
+            <objects>
+                <viewController id="cKs-Ac-ogP" customClass="WebViewController" customModule="SwftLoveWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cjz-Xy-cTr"/>
+                        <viewControllerLayoutGuide type="bottom" id="1A3-2h-Mux"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m78-Yl-vee">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sU9-oo-lKD">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" systemItem="stop" id="7YY-Xr-L9x">
+                                        <connections>
+                                            <action selector="dismiss:" destination="cKs-Ac-ogP" id="B8m-Sj-GeR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3f-z0-B6i">
+                                <rect key="frame" x="53" y="72" width="600" height="528"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F3f-z0-B6i" firstAttribute="bottom" secondItem="1A3-2h-Mux" secondAttribute="top" id="8J8-tU-j3j"/>
+                            <constraint firstItem="sU9-oo-lKD" firstAttribute="top" secondItem="cjz-Xy-cTr" secondAttribute="bottom" constant="8" id="8St-uW-SQc"/>
+                            <constraint firstItem="F3f-z0-B6i" firstAttribute="leading" secondItem="m78-Yl-vee" secondAttribute="leading" id="DDi-Xd-qKl"/>
+                            <constraint firstItem="F3f-z0-B6i" firstAttribute="trailing" secondItem="sU9-oo-lKD" secondAttribute="trailing" id="DwQ-aE-eYf"/>
+                            <constraint firstItem="sU9-oo-lKD" firstAttribute="leading" secondItem="F3f-z0-B6i" secondAttribute="leading" id="LS3-L4-olm"/>
+                            <constraint firstItem="F3f-z0-B6i" firstAttribute="top" secondItem="sU9-oo-lKD" secondAttribute="bottom" id="NdJ-Z7-Bzn"/>
+                            <constraint firstAttribute="trailing" secondItem="F3f-z0-B6i" secondAttribute="trailing" id="edu-uN-NPE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="F3f-z0-B6i" id="o2R-M5-CwY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yrk-xc-lCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-781" y="-224"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Qet-go-GFC">
+            <objects>
+                <tableViewController id="t2J-TK-Pco" customClass="HomeViewController" customModule="SwftLoveWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hPg-or-liR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="JYCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="JYCell" textLabel="S7w-qc-OUv" style="IBUITableViewCellStyleDefault" id="W5A-zF-OZz">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W5A-zF-OZz" id="97H-Dc-fzg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S7w-qc-OUv">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="t2J-TK-Pco" id="V3w-OO-SBa"/>
+                            <outlet property="delegate" destination="t2J-TK-Pco" id="UEg-6d-G3T"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnn-Qd-Q2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-745" y="-1634"/>
+        </scene>
+        <!--Message View Controller-->
+        <scene sceneID="oCX-aY-uDz">
+            <objects>
+                <tableViewController id="yzk-Om-2gV" customClass="MessageViewController" customModule="SwftLoveWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="RGi-Oi-sEd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hi8-m0-Okm">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hi8-m0-Okm" id="Dpg-cB-kWV">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yzk-Om-2gV" id="GLQ-Pb-Pbw"/>
+                            <outlet property="delegate" destination="yzk-Om-2gV" id="7kI-oi-I6v"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBN-GE-qls" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-603" y="-1737"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8S7-lo-MEI">
+            <objects>
+                <viewController id="YB7-FR-NJY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mn8-gO-Egi"/>
+                        <viewControllerLayoutGuide type="bottom" id="KFf-iU-wXQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Me2-Pv-nRv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="else baseVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFK-Y8-mdh">
+                                <rect key="frame" x="227" y="188" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qb6-qG-ZNX">
+                                <rect key="frame" x="151" y="0.0" width="600" height="44"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qb6-qG-ZNX" id="6vd-d9-1wz">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="jFK-Y8-mdh" id="RLv-wH-RXM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fOn-5N-VlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-309" y="-1567"/>
+        </scene>
+        <!--Discover View Controller-->
+        <scene sceneID="v5U-eP-MsZ">
+            <objects>
+                <tableViewController id="VsI-KB-nJL" customClass="DiscoverViewController" customModule="SwftLoveWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uT1-bQ-jbz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0aZ-OT-H21">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0aZ-OT-H21" id="J6v-cz-WUl">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VsI-KB-nJL" id="QgD-IA-jr5"/>
+                            <outlet property="delegate" destination="VsI-KB-nJL" id="0XK-Os-M03"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sxq-wJ-Ibp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-176" y="-1485"/>
+        </scene>
+        <!--扫描二维码-->
+        <scene sceneID="oQj-I7-pM5">
+            <objects>
+                <viewController storyboardIdentifier="Scan" title="扫描二维码" id="CFp-5X-P1f" customClass="QRCodeViewController" customModule="SwftLoveWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s8V-Rd-hFg"/>
+                        <viewControllerLayoutGuide type="bottom" id="DYQ-J6-I2s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gxi-1h-26L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNK-GR-UbP" userLabel="容器">
+                                <rect key="frame" x="57" y="218" width="300" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_border" translatesAutoresizingMaskIntoConstraints="NO" id="gSn-FU-PTE" userLabel="边框">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_scanline_barcode" translatesAutoresizingMaskIntoConstraints="NO" id="AUd-uA-v1k" userLabel="冲击波">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="AUd-uA-v1k" firstAttribute="centerX" secondItem="UNK-GR-UbP" secondAttribute="centerX" id="Brm-tn-aYI"/>
+                                    <constraint firstAttribute="bottom" secondItem="gSn-FU-PTE" secondAttribute="bottom" id="FHS-sO-USq"/>
+                                    <constraint firstAttribute="height" constant="300" id="K19-KF-JeS"/>
+                                    <constraint firstAttribute="width" constant="300" id="RAs-cY-62H"/>
+                                    <constraint firstAttribute="trailing" secondItem="gSn-FU-PTE" secondAttribute="trailing" id="Usu-fY-aS3"/>
+                                    <constraint firstItem="AUd-uA-v1k" firstAttribute="top" secondItem="UNK-GR-UbP" secondAttribute="top" id="WkT-M3-aY5"/>
+                                    <constraint firstItem="gSn-FU-PTE" firstAttribute="leading" secondItem="UNK-GR-UbP" secondAttribute="leading" id="YRY-Xe-7HX"/>
+                                    <constraint firstItem="AUd-uA-v1k" firstAttribute="height" secondItem="UNK-GR-UbP" secondAttribute="height" id="f1H-BT-jSx"/>
+                                    <constraint firstItem="gSn-FU-PTE" firstAttribute="top" secondItem="UNK-GR-UbP" secondAttribute="top" id="jaN-ZC-zjO"/>
+                                    <constraint firstItem="AUd-uA-v1k" firstAttribute="width" secondItem="UNK-GR-UbP" secondAttribute="width" id="zf4-B4-EaQ"/>
+                                </constraints>
+                            </view>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wec-3p-ZT0">
+                                <rect key="frame" x="0.0" y="643" width="414" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="二维码" image="qrcode_tabbar_icon_qrcode_highlighted" id="gtX-lz-PST"/>
+                                    <tabBarItem tag="1" title="条形码" image="qrcode_tabbar_icon_barcode" id="pE5-LC-PBl"/>
+                                </items>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="CFp-5X-P1f" id="Hf6-T5-jQB"/>
+                                </connections>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1215686275" green="0.16078431369999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UNK-GR-UbP" firstAttribute="centerX" secondItem="Gxi-1h-26L" secondAttribute="centerX" id="Afy-He-m8P"/>
+                            <constraint firstAttribute="trailing" secondItem="wec-3p-ZT0" secondAttribute="trailing" id="Q67-Dz-oS8"/>
+                            <constraint firstItem="UNK-GR-UbP" firstAttribute="centerY" secondItem="Gxi-1h-26L" secondAttribute="centerY" id="UoZ-Uj-gBo"/>
+                            <constraint firstItem="wec-3p-ZT0" firstAttribute="leading" secondItem="Gxi-1h-26L" secondAttribute="leading" id="X9E-pK-zcq"/>
+                            <constraint firstItem="DYQ-J6-I2s" firstAttribute="top" secondItem="wec-3p-ZT0" secondAttribute="bottom" id="mxi-gG-YQJ"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="nJV-7H-Z4c">
+                        <barButtonItem key="leftBarButtonItem" title="close" id="SW6-GR-6BD">
+                            <connections>
+                                <action selector="closeButton:" destination="CFp-5X-P1f" id="KQv-Nf-FAT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="photo" id="3og-hD-0ne">
+                            <connections>
+                                <action selector="selectorButton:" destination="CFp-5X-P1f" id="Ff3-bz-4dT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="containHeightCons" destination="K19-KF-JeS" id="Vud-Vy-ntP"/>
+                        <outlet property="scanLinCons" destination="WkT-M3-aY5" id="8TR-PV-9TY"/>
+                        <outlet property="scanLineView" destination="AUd-uA-v1k" id="bq7-W0-Dax"/>
+                        <outlet property="tabBar" destination="wec-3p-ZT0" id="zqo-qp-MI7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rgk-FH-zBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701" y="-2137"/>
+        </scene>
+        <!--Popover View Controller-->
+        <scene sceneID="aQB-Dk-Faz">
+            <objects>
+                <viewController id="8q1-AN-k6u" customClass="JYPopoverViewController" customModule="SwftLoveWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IbD-rH-Ecg"/>
+                        <viewControllerLayoutGuide type="bottom" id="jOp-k7-H8E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ypc-dc-7vh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="h1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ow5-EY-ymu">
+                                <rect key="frame" x="40" y="10" width="20" height="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="h2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XX-4T-tdg">
+                                <rect key="frame" x="40" y="40" width="20" height="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="image1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbo-Dj-zms">
+                                <rect key="frame" x="58" y="5" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="image2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9v4-sX-8j7">
+                                <rect key="frame" x="58" y="34" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4XX-4T-tdg" firstAttribute="trailing" secondItem="Ow5-EY-ymu" secondAttribute="trailing" id="8VG-IW-A0P"/>
+                            <constraint firstItem="jOp-k7-H8E" firstAttribute="top" secondItem="9v4-sX-8j7" secondAttribute="bottom" constant="545" id="8ut-lB-8pQ"/>
+                            <constraint firstItem="Bbo-Dj-zms" firstAttribute="leading" secondItem="9v4-sX-8j7" secondAttribute="leading" id="BGj-ra-a4E"/>
+                            <constraint firstItem="9v4-sX-8j7" firstAttribute="top" secondItem="Bbo-Dj-zms" secondAttribute="bottom" constant="8" symbolic="YES" id="TKk-fX-4U6"/>
+                            <constraint firstItem="Bbo-Dj-zms" firstAttribute="leading" secondItem="ypc-dc-7vh" secondAttribute="leadingMargin" constant="38" id="TMw-o3-HvA"/>
+                            <constraint firstItem="4XX-4T-tdg" firstAttribute="top" secondItem="IbD-rH-Ecg" secondAttribute="bottom" constant="20" id="TcH-hD-rpQ"/>
+                            <constraint firstItem="Ow5-EY-ymu" firstAttribute="bottom" secondItem="IbD-rH-Ecg" secondAttribute="bottom" id="VVW-Ba-yuR"/>
+                            <constraint firstItem="Ow5-EY-ymu" firstAttribute="centerY" secondItem="Bbo-Dj-zms" secondAttribute="centerY" id="Yos-UA-yJm"/>
+                            <constraint firstItem="4XX-4T-tdg" firstAttribute="leading" secondItem="Ow5-EY-ymu" secondAttribute="leading" id="dmM-fC-mCS"/>
+                            <constraint firstItem="Bbo-Dj-zms" firstAttribute="top" secondItem="ypc-dc-7vh" secondAttribute="topMargin" constant="5" id="hcg-Vf-2SP"/>
+                            <constraint firstItem="4XX-4T-tdg" firstAttribute="centerY" secondItem="9v4-sX-8j7" secondAttribute="centerY" id="iX1-Jw-Re8"/>
+                            <constraint firstItem="Ow5-EY-ymu" firstAttribute="leading" secondItem="ypc-dc-7vh" secondAttribute="leadingMargin" constant="20" id="tHg-3S-iCd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="h1" destination="Ow5-EY-ymu" id="kpL-xo-xZN"/>
+                        <outlet property="h2" destination="4XX-4T-tdg" id="T6Q-hL-D5X"/>
+                        <outlet property="image1" destination="Bbo-Dj-zms" id="ThX-mG-TLa"/>
+                        <outlet property="image2" destination="9v4-sX-8j7" id="1ob-mb-PnD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qib-m5-FXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="-530"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="5h0-og-qPF">
+            <objects>
+                <tableViewController id="11l-HI-arO" customClass="ProfileViewController" customModule="SwftLoveWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uou-Ro-nHM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="11l-HI-arO" id="9zK-k0-bjL"/>
+                            <outlet property="delegate" destination="11l-HI-arO" id="1CW-Gc-QHY"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fOE-Rv-ds7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-425" y="-1737"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="vce-7I-J7w">
+            <objects>
+                <tabBarController id="1c7-Bh-yEn" customClass="MainViewController" customModule="SwftLoveWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Kie-WA-mIS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZtA-Mt-ads" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-781" y="-1144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ras-73-OUY">
+            <objects>
+                <viewController id="o04-Ww-Ei1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dgn-Kt-2IT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dbk-kW-h2Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uI2-LD-Fgo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChL-SW-6qQ">
+                                <rect key="frame" x="326" y="232" width="30" height="30"/>
+                                <state key="normal" title="验证"/>
+                                <connections>
+                                    <segue destination="cKs-Ac-ogP" kind="show" id="OBv-Db-JTL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UtK-lu-rCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-684" y="-588"/>
+        </scene>
+        <!--扫描二维码-->
+        <scene sceneID="Brg-Fk-cdp">
+            <objects>
+                <navigationController storyboardIdentifier="SCanNav" title="扫描二维码" automaticallyAdjustsScrollViewInsets="NO" id="m7t-cf-ooY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="osH-Tk-noi"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ENu-vl-mBu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CFp-5X-P1f" kind="relationship" relationship="rootViewController" id="amU-Sb-KvM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YyG-hJ-WIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058" y="-1702"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="qrcode_border" width="51" height="51"/>
+        <image name="qrcode_scanline_barcode" width="248" height="124"/>
+        <image name="qrcode_tabbar_icon_barcode" width="40" height="40"/>
+        <image name="qrcode_tabbar_icon_qrcode_highlighted" width="40" height="40"/>
+    </resources>
+</document>

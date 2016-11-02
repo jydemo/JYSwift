@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (3.4.0)
+  - APESuperHUD (0.5.4)
+  - JSAnimatedImagesView (1.0.0):
+    - MSWeakTimer (~> 1.0)
+  - MSWeakTimer (1.1.0)
+  - SnapKit (0.21.0)
+  - StarWars (1.0)
+  - SwiftyJSON (2.3.2)
+  - YYCache (1.0.3)
+  - YYImage (1.0.2):
+    - YYImage/Core (= 1.0.2)
+  - YYImage/Core (1.0.2)
+  - YYWebImage (1.0.3):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - Alamofire
+  - APESuperHUD
+  - JSAnimatedImagesView
+  - SnapKit
+  - StarWars
+  - SwiftyJSON
+  - YYWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  APESuperHUD: 16cb95a8dc9e062a082db31ab262cc9370e335e8
+  JSAnimatedImagesView: d5c5f561280171ce13f1f08ba9834c47a1f27bfc
+  MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
+  SnapKit: 2756fe24b706367af224c9c508d2f9166d03354c
+  StarWars: 01f1731789f738f64c6a9533c209213aaf465014
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
+  YYImage: 2cc79ed49b9549b71c6715cefe7b0f5ab3d33abf
+  YYWebImage: 8da75a611fd0d2e0f58a273f9ca0bc731614cb0d
+
+COCOAPODS: 0.39.0

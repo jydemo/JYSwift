@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C2381741DC989EE005A9831 /* JYTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2381731DC989EE005A9831 /* JYTipView.swift */; };
+		5C61F1941DBC5791009D3691 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C61F1931DBC5791009D3691 /* UIView+Extension.swift */; };
+		5C61F1961DBC605E009D3691 /* JYNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C61F1951DBC605E009D3691 /* JYNetworkTool.swift */; };
+		5CD089CE1DBC36E600FB2625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD089CD1DBC36E600FB2625 /* AppDelegate.swift */; };
+		5CD089D01DBC36E600FB2625 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD089CF1DBC36E600FB2625 /* ViewController.swift */; };
+		5CD089D31DBC36E600FB2625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD089D11DBC36E600FB2625 /* Main.storyboard */; };
+		5CD089D51DBC36E600FB2625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD089D41DBC36E600FB2625 /* Assets.xcassets */; };
+		5CD089D81DBC36E600FB2625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD089D61DBC36E600FB2625 /* LaunchScreen.storyboard */; };
+		5CD089E31DBC384800FB2625 /* JYTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD089E21DBC384800FB2625 /* JYTabBarController.swift */; };
+		5CD089E51DBC395500FB2625 /* JYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD089E41DBC395500FB2625 /* JYNavigationController.swift */; };
+		5CD089E71DBC3A8700FB2625 /* JYConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD089E61DBC3A8700FB2625 /* JYConst.swift */; };
+		5CD089E91DBC3DDD00FB2625 /* JYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD089E81DBC3DDD00FB2625 /* JYHomeViewController.swift */; };
+		5CD089EB1DBC3DFD00FB2625 /* JYVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD089EA1DBC3DFD00FB2625 /* JYVideoViewController.swift */; };
+		5CD089ED1DBC3E1500FB2625 /* JYNewCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD089EC1DBC3E1500FB2625 /* JYNewCareViewController.swift */; };
+		5CD089EF1DBC3E2C00FB2625 /* JYMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD089EE1DBC3E2C00FB2625 /* JYMineViewController.swift */; };
+		5CD089F11DBC412B00FB2625 /* JYHomeTopTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD089F01DBC412B00FB2625 /* JYHomeTopTitle.swift */; };
+		5CD089F31DBC432F00FB2625 /* JYScrollTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD089F21DBC432F00FB2625 /* JYScrollTitleView.swift */; };
+		90B54E2E38EC1B92A7C86A28 /* Pods_JYNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE34C0308025B8798CEE7BC /* Pods_JYNews.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13C60FA614F9A463DA1588BB /* Pods-JYNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYNews/Pods-JYNews.release.xcconfig"; sourceTree = "<group>"; };
+		5C2381731DC989EE005A9831 /* JYTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYTipView.swift; sourceTree = "<group>"; };
+		5C61F1931DBC5791009D3691 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		5C61F1951DBC605E009D3691 /* JYNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYNetworkTool.swift; sourceTree = "<group>"; };
+		5CD089CA1DBC36E600FB2625 /* JYNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD089CD1DBC36E600FB2625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CD089CF1DBC36E600FB2625 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CD089D21DBC36E600FB2625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CD089D41DBC36E600FB2625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CD089D71DBC36E600FB2625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CD089D91DBC36E600FB2625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CD089E21DBC384800FB2625 /* JYTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYTabBarController.swift; sourceTree = "<group>"; };
+		5CD089E41DBC395500FB2625 /* JYNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYNavigationController.swift; sourceTree = "<group>"; };
+		5CD089E61DBC3A8700FB2625 /* JYConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYConst.swift; sourceTree = "<group>"; };
+		5CD089E81DBC3DDD00FB2625 /* JYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYHomeViewController.swift; sourceTree = "<group>"; };
+		5CD089EA1DBC3DFD00FB2625 /* JYVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYVideoViewController.swift; sourceTree = "<group>"; };
+		5CD089EC1DBC3E1500FB2625 /* JYNewCareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYNewCareViewController.swift; sourceTree = "<group>"; };
+		5CD089EE1DBC3E2C00FB2625 /* JYMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYMineViewController.swift; sourceTree = "<group>"; };
+		5CD089F01DBC412B00FB2625 /* JYHomeTopTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYHomeTopTitle.swift; sourceTree = "<group>"; };
+		5CD089F21DBC432F00FB2625 /* JYScrollTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYScrollTitleView.swift; sourceTree = "<group>"; };
+		EAE34C0308025B8798CEE7BC /* Pods_JYNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F909B8407134FD7F90B47EAD /* Pods-JYNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYNews/Pods-JYNews.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CD089C71DBC36E600FB2625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90B54E2E38EC1B92A7C86A28 /* Pods_JYNews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EAE21F583E8C5CC30098EB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAE34C0308025B8798CEE7BC /* Pods_JYNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CD089C11DBC36E600FB2625 = {
+			isa = PBXGroup;
+			children = (
+				5C2381731DC989EE005A9831 /* JYTipView.swift */,
+				5CD089CC1DBC36E600FB2625 /* JYNews */,
+				5CD089CB1DBC36E600FB2625 /* Products */,
+				C5044E9E3E4A7E244D1C9908 /* Pods */,
+				2EAE21F583E8C5CC30098EB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5CD089CB1DBC36E600FB2625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CD089CA1DBC36E600FB2625 /* JYNews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CD089CC1DBC36E600FB2625 /* JYNews */ = {
+			isa = PBXGroup;
+			children = (
+				5CD089DF1DBC371700FB2625 /* Class */,
+				5CD089CD1DBC36E600FB2625 /* AppDelegate.swift */,
+				5CD089CF1DBC36E600FB2625 /* ViewController.swift */,
+				5CD089D11DBC36E600FB2625 /* Main.storyboard */,
+				5CD089D41DBC36E600FB2625 /* Assets.xcassets */,
+				5CD089E81DBC3DDD00FB2625 /* JYHomeViewController.swift */,
+				5CD089EA1DBC3DFD00FB2625 /* JYVideoViewController.swift */,
+				5CD089EC1DBC3E1500FB2625 /* JYNewCareViewController.swift */,
+				5CD089EE1DBC3E2C00FB2625 /* JYMineViewController.swift */,
+				5CD089F01DBC412B00FB2625 /* JYHomeTopTitle.swift */,
+				5CD089F21DBC432F00FB2625 /* JYScrollTitleView.swift */,
+				5C61F1931DBC5791009D3691 /* UIView+Extension.swift */,
+				5C61F1951DBC605E009D3691 /* JYNetworkTool.swift */,
+				5CD089D61DBC36E600FB2625 /* LaunchScreen.storyboard */,
+				5CD089D91DBC36E600FB2625 /* Info.plist */,
+			);
+			path = JYNews;
+			sourceTree = "<group>";
+		};
+		5CD089DF1DBC371700FB2625 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5CD089E21DBC384800FB2625 /* JYTabBarController.swift */,
+				5CD089E41DBC395500FB2625 /* JYNavigationController.swift */,
+				5CD089E61DBC3A8700FB2625 /* JYConst.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		C5044E9E3E4A7E244D1C9908 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F909B8407134FD7F90B47EAD /* Pods-JYNews.debug.xcconfig */,
+				13C60FA614F9A463DA1588BB /* Pods-JYNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CD089C91DBC36E600FB2625 /* JYNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CD089DC1DBC36E600FB2625 /* Build configuration list for PBXNativeTarget "JYNews" */;
+			buildPhases = (
+				9DA42C8168A5B7FD749255EF /* [CP] Check Pods Manifest.lock */,
+				5CD089C61DBC36E600FB2625 /* Sources */,
+				5CD089C71DBC36E600FB2625 /* Frameworks */,
+				5CD089C81DBC36E600FB2625 /* Resources */,
+				01F257893E6846BD0DB3DE1C /* [CP] Embed Pods Frameworks */,
+				64BEA1C43EF859AA33AF565D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYNews;
+			productName = JYNews;
+			productReference = 5CD089CA1DBC36E600FB2625 /* JYNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CD089C21DBC36E600FB2625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = cyin;
+				TargetAttributes = {
+					5CD089C91DBC36E600FB2625 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = JE8CSGTB5D;
+					};
+				};
+			};
+			buildConfigurationList = 5CD089C51DBC36E600FB2625 /* Build configuration list for PBXProject "JYNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CD089C11DBC36E600FB2625;
+			productRefGroup = 5CD089CB1DBC36E600FB2625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CD089C91DBC36E600FB2625 /* JYNews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CD089C81DBC36E600FB2625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD089D81DBC36E600FB2625 /* LaunchScreen.storyboard in Resources */,
+				5CD089D51DBC36E600FB2625 /* Assets.xcassets in Resources */,
+				5CD089D31DBC36E600FB2625 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01F257893E6846BD0DB3DE1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYNews/Pods-JYNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64BEA1C43EF859AA33AF565D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYNews/Pods-JYNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA42C8168A5B7FD749255EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CD089C61DBC36E600FB2625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD089D01DBC36E600FB2625 /* ViewController.swift in Sources */,
+				5CD089CE1DBC36E600FB2625 /* AppDelegate.swift in Sources */,
+				5CD089E51DBC395500FB2625 /* JYNavigationController.swift in Sources */,
+				5CD089E71DBC3A8700FB2625 /* JYConst.swift in Sources */,
+				5CD089EB1DBC3DFD00FB2625 /* JYVideoViewController.swift in Sources */,
+				5CD089E91DBC3DDD00FB2625 /* JYHomeViewController.swift in Sources */,
+				5C61F1941DBC5791009D3691 /* UIView+Extension.swift in Sources */,
+				5CD089F31DBC432F00FB2625 /* JYScrollTitleView.swift in Sources */,
+				5CD089F11DBC412B00FB2625 /* JYHomeTopTitle.swift in Sources */,
+				5CD089E31DBC384800FB2625 /* JYTabBarController.swift in Sources */,
+				5CD089ED1DBC3E1500FB2625 /* JYNewCareViewController.swift in Sources */,
+				5C2381741DC989EE005A9831 /* JYTipView.swift in Sources */,
+				5CD089EF1DBC3E2C00FB2625 /* JYMineViewController.swift in Sources */,
+				5C61F1961DBC605E009D3691 /* JYNetworkTool.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5CD089D11DBC36E600FB2625 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CD089D21DBC36E600FB2625 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CD089D61DBC36E600FB2625 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CD089D71DBC36E600FB2625 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CD089DA1DBC36E600FB2625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CD089DB1DBC36E600FB2625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CD089DD1DBC36E600FB2625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F909B8407134FD7F90B47EAD /* Pods-JYNews.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JYNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.cyin.JYNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5CD089DE1DBC36E600FB2625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13C60FA614F9A463DA1588BB /* Pods-JYNews.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JYNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.cyin.JYNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CD089C51DBC36E600FB2625 /* Build configuration list for PBXProject "JYNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD089DA1DBC36E600FB2625 /* Debug */,
+				5CD089DB1DBC36E600FB2625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CD089DC1DBC36E600FB2625 /* Build configuration list for PBXNativeTarget "JYNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD089DD1DBC36E600FB2625 /* Debug */,
+				5CD089DE1DBC36E600FB2625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CD089C21DBC36E600FB2625 /* Project object */;
+}
